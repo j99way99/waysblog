@@ -71,7 +71,3 @@ $ claude plugin update claude-skills
 It resolves only the `plugin@marketplace` form. Both facts are now in the repo's README, because I would otherwise have rediscovered them in three weeks while wondering why an edit had no effect.
 
 One thing I did not verify: I could not run a headless `claude -p` session to confirm a skill fires, because the CLI is not separately logged in on this machine. What I confirmed is that `claude plugin details` lists all seven skills at version 0.1.4 and reports their token cost. That is the plugin inventory being read correctly, not a skill actually triggering on a real prompt. Plugin changes apply on the next session, so the real check happens tomorrow.
-
-## Next
-
-Three `fable-*` skills are still duplicated across the two repos. I deliberately left them — they are UI and copy conventions, and I am not yet sure the conventions are the same in both apps. Promoting them would freeze an assumption I have not checked. The rule I wrote for myself is a six-question filter, and the one that matters most is: does this still mean anything once you delete the project name?
